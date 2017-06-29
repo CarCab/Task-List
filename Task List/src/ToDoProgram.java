@@ -18,36 +18,39 @@ public class ToDoProgram {
 
 		switch(input) {
 		
-		case "exit": {
-			System.out.println("Exit to end");
-
-
-			break exit;			
-		}
-
-		case "add": {
-			System.out.println("Enter name of task to add");
-			String name = sc.next();
-			list.add(new Task(name));
-
-			break;			
-		}
-		case "showTaskList": {
-			System.out.println("Show Task List");
-
-
-			break;			
-		}
-
-		default: {
-
-			System.out.println("Unknown choice");
-		}
-
-		}
+			case "exit": {
+				System.out.println("Exit to end");
+				
+				break exit;			
+			}
+	
+			case "add": {
+				System.out.println("Enter name of task to add");
+				String name = sc.next();
+				list.add(new Task(name));
+	
+				break;			
+			}
+			case "showTaskList": {
+				System.out.println("Show Task List");
+	
+				break;			
+			}
+			case "edit": {
+				System.out.println("Edit task status");
+	
+				break;			
+			}
+	
+			default: {
+	
+				System.out.println("Unknown choice");
+			}
+	
+			}
 
 	
-		}
+			}
 		}	
 
 
