@@ -8,8 +8,7 @@ public class Task {
 	
 	public Task(String name) {
 		this.name = name;
-		
-		status = Status.Unitiated;
+		this.status = Status.Unitiated;
 	}
 
 	
@@ -32,15 +31,18 @@ public class Task {
 
 
 
-	public void taskOngoingStatus() {
+	public void taskStatusOngoing() {
 		status = Status.Ongoing;
 	}
 	
-	public void taskDoneStatus() {
+	public void taskStatusDone() {
 		status = Status.Done;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return name + " " + status;
+	}
 	
 	
 }
