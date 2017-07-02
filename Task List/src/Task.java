@@ -8,7 +8,7 @@ public class Task {
 	
 	public Task(String name) {
 		this.name = name;
-		this.status = Status.Unitiated;
+		this.status = Status.UNITIATED;
 	}
 
 	
@@ -17,26 +17,20 @@ public class Task {
 		return name;
 	}
 
-
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
-
 
 	public Status getStatus() {
 		return status;
 	}
 
-
-
-	public void taskStatusOngoing() {
-		status = Status.Ongoing;
+	public void ongoing() {
+		status = Status.ONGIONG;
 	}
 	
-	public void taskStatusDone() {
-		status = Status.Done;
+	public void done() {
+		status = Status.DONE;
 	}
 	
 	@Override

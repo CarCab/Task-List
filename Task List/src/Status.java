@@ -1,5 +1,5 @@
 
 public enum Status {
-	Unitiated, Ongoing, Done;
+	UNITIATED, ONGIONG, DONE;
 
 }
